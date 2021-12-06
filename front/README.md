@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Carrito de compras
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Se implementa un carrito de compras simple usando react, consumiendo una api alojada localmente y corriendo por el puerto 5000, la cual me trae una serie de productos con los que se implementaA el carrito.
 
-## Available Scripts
+Para el consumo de la api se realizo con la libreria de axios, el estado se manejo usando useContext y el manejo de rutas con react-router-dom.
 
-In the project directory, you can run:
+## Requerimientos mínimos
 
-### `yarn start`
+Node 14.15.0
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instalar y Correr la aplicación
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Instalar API (backend) y la aplicacion React (front):
 
-### `yarn test`
+1. En la carpeta `root` de la aplicacion correr:
+   `npm install`
+2. Navega al directorio `front` y vuelve a correr el comando:
+   `npm install`
+3. Regresa al directorio root `cd ..`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La aplicación está compuesta de un servidor Express y una instalación básica de Create-React-App (CRA). Todo está configurado para correr con un solo comando
 
-### `yarn build`
+`npm run dev`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esto correrá ambas aplicaciones (Express y CRA) al mismo tiempo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- CRA se encuentra en:
+  `http://localhost:3000/`
+ y se ve de la siguiente forma:
+ ![Running app](/running-app.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+- El servidor se encuentra en:
+  `http://localhost:5000/`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- La lista de productos se encuentra:
+  `http://localhost:5000/api/products`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Puedes encontrar cada producto por su ID:
+  `http://localhost:5000/api/products/1`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Las imágenes se encuentran en:|
+  `http://localhost:5000/images/{{nombre-de-la-imagen}}`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Uso
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Una vez este corriendo todo lo requerido se encontrara con una pagina de bienvenida la cual tendra un boton para listar los productos y ya estando alli podras interactuar con la tienda,agregar al carro, ver detalles del producto individual, eliminar producto del carrito e ir al chechout para terminar la compra la cual te llevara a una ventana de exito y alli te podras redireccionar de nuevo  a lapantalla de bienvenida,
