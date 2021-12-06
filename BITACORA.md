@@ -1,0 +1,48 @@
+# Carrito de compras
+
+Se implementa un carrito de compras simple usando react, consumiendo una api alojada localmente y corriendo por el puerto 5000, la cual me trae una serie de productos con los que se implementaA el carrito.
+
+Para el consumo de la api se realizo con la libreria de axios, el estado se manejo usando useContext y el manejo de rutas con react-router-dom.
+
+## Requerimientos mínimos
+
+Node 14.15.0
+
+## Instalar y Correr la aplicación
+
+Instalar API (backend) y la aplicacion React (front):
+
+1. En la carpeta `root` de la aplicacion correr:
+   `npm install`
+2. Navega al directorio `front` y vuelve a correr el comando:
+   `npm install`
+3. Regresa al directorio root `cd ..`.
+
+La aplicación está compuesta de un servidor Express y una instalación básica de Create-React-App (CRA). Todo está configurado para correr con un solo comando
+
+`npm run dev`
+
+Esto correrá ambas aplicaciones (Express y CRA) al mismo tiempo.
+
+- CRA se encuentra en:
+  `http://localhost:3000/`
+ y se ve de la siguiente forma:
+ ![Running app](/running-app.png)
+
+
+- El servidor se encuentra en:
+  `http://localhost:5000/`
+
+- La lista de productos se encuentra:
+  `http://localhost:5000/api/products`
+
+- Puedes encontrar cada producto por su ID:
+  `http://localhost:5000/api/products/1`
+
+- Las imágenes se encuentran en:|
+  `http://localhost:5000/images/{{nombre-de-la-imagen}}`
+
+
+## Uso
+
+Una vez este corriendo todo lo requerido se encontrara con una pagina de bienvenida la cual tendra un boton para listar los productos y ya estando alli podras interactuar con la tienda,agregar al carro, ver detalles del producto individual, eliminar producto del carrito e ir al chechout para terminar la compra la cual te llevara a una ventana de exito y alli te podras redireccionar de nuevo  a lapantalla de bienvenida,
