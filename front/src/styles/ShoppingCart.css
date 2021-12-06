@@ -1,0 +1,24 @@
+.Checkout {
+	display: flex;
+}
+
+.Checkout-shopping {
+	background-color: #237fff54;
+	/* color: #fff; */
+	padding: 10px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: none;
+}
+
+.Checkout-shopping:hover {
+	background-color: #acd9b2ab;
+	color: #000;
+	transition: ease-in-out 0.3s;
+}
+
+.Checkout-bubble {
+	position: relative;
+	left: 15px;
+	top: 28px;
+}

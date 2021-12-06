@@ -1,0 +1,35 @@
+.OrderItem {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 2rem 0;
+
+}
+.OrderItem figure {
+	margin: 0;
+}
+.OrderItem figure img {
+	width: 70px;
+	height: 70px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+.OrderItem p:nth-child(2) {
+	width: 30%;
+	padding: 0 1rem;
+	color: #C7C7C7;
+}
+.OrderItem p:nth-child(3) {
+	margin-right: 1rem;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.OrderItem > img {
+	position: absolute;
+	width: 1.1rem;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.MyOrder {
+	width: 380px;
+	max-height: 80vh;
+	padding: 1.5rem 2rem;
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	background-color: #FFFFFF;
+	top: 70px;
+	border-radius: 6px;
+	border: 1px solid #C7C7C7;
+	z-index: 100;
+	overflow-y: auto;
+}
+.title-container {
+	display: flex;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.order {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 16px;
+	align-items: center;
+	background-color: #F7F7F7;
+	margin-bottom: 24px;
+	border-radius: 8px;
+	padding: 0 24px;
+}
+.order p:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+.order p span:nth-child(1) {
+	font-size: 16px;
+	font-weight: bold;
+}
+.order p:nth-child(2) {
+	text-align: end;
+	font-weight: bold;
+}
+
+.button-checkout {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 9rem;
+	height: 1rem;
+	text-decoration: none;
+	background-color: #5cdd6d;
+	border-radius: 8px;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 1rem 0;
+	margin-bottom: 1rem;
+	transition: 0.5s;
+}
+
+.button-checkout:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+	.MyOrder {
+		width: 100%;
+		padding: 1.5rem 4rem;
+	}
+}
