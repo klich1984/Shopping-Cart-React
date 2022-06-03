@@ -1,7 +1,7 @@
 {
   "name": "server.js",
   "version": "1.0.0",
-  "description": "Ecomsur tecnical test 2021",
+  "description": "Carrito de compras con React",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server",
@@ -9,7 +9,7 @@
     "client": "npm start --prefix front",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Ecomsur",
+  "author": "klich84",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
