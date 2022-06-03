@@ -27,7 +27,7 @@ Esto correrá ambas aplicaciones (Express y CRA) al mismo tiempo.
 - CRA se encuentra en:
   `http://localhost:3000/`
  y se ve de la siguiente forma:
- ![Running app](/running-app.png)
+ ![Home](/img/home.png)
 
 
 - El servidor se encuentra en:
@@ -45,4 +45,4 @@ Esto correrá ambas aplicaciones (Express y CRA) al mismo tiempo.
 
 ## Uso
 
-Una vez este corriendo todo lo requerido se encontrara con una pagina de bienvenida la cual tendra un boton para listar los productos y ya estando alli podras interactuar con la tienda,agregar al carro, ver detalles del producto individual, eliminar producto del carrito e ir al chechout para terminar la compra la cual te llevara a una ventana de exito y alli te podras redireccionar de nuevo  a lapantalla de bienvenida,
+Una vez este corriendo todo lo requerido se encontrara con una pagina de bienvenida la cual tendra un boton para listar los productos y ya estando alli podras interactuar con la tienda,agregar al carro, ver detalles del producto individual, eliminar producto del carrito e ir al chechout para terminar la compra la cual te llevara a una ventana de exito y alli te podras redireccionar de nuevo  a lapantalla de bienvenida.
