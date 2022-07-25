@@ -45,7 +45,7 @@ Implementación de un carrito de compras simple que trae toda la info del API lo
 - Una lista de ítems mostrando el catálogo de productos. (Product List Page)
 - Página de producto mostrando detalle de producto. (Product Display Page)
 - Un carrito de compras que tiene todos los ítems que serán comprados por el usuario. (Cart Page)
-- Espacio donde se muestre la sincronización de los ítems añadidos al carrito. (Mini cart) ![mini cart example](/minicart-example.png)
+- Espacio donde se muestre la sincronización de los ítems añadidos al carrito. (Mini cart) ![mini cart example](/img/minicart-example.png)
 
 ## Uso
 
@@ -55,10 +55,9 @@ Una vez este corriendo todo lo requerido se encontrara con una pagina de bienven
 
 ![PLP](/img/PLP.png)
 
-
 ## Pagina de producto PDP
 
-![PLP](/img/PDP.png)
+![PDP](/img/PDP.png)
 
 ## Modal Carrito de Compras
 
@@ -66,4 +65,4 @@ Una vez este corriendo todo lo requerido se encontrara con una pagina de bienven
 
 ## Carrito de Compras
 
-![PLP](/img/Checkout.png)
+![Cart Shopping](/img/Checkout.png)
